@@ -91,6 +91,13 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+            Text(
+                " Tendencias!",
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 22,
+                ),
+              ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(

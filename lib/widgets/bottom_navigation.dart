@@ -8,6 +8,8 @@ class BottomWidget extends StatelessWidget {
       backgroundColor: primaryColor,
       unselectedItemColor: backgroundColor,
       selectedItemColor: secondaryColor,
+      showSelectedLabels: false,
+      showUnselectedLabels: false,
       items: const [
         BottomNavigationBarItem(
           label: '',
@@ -17,6 +19,7 @@ class BottomWidget extends StatelessWidget {
         BottomNavigationBarItem(
           label: '',
           icon: Icon(Icons.favorite_outline),
+          backgroundColor: Color(0xFFF96241),
         ),
         BottomNavigationBarItem(
           label: '',
@@ -24,6 +27,7 @@ class BottomWidget extends StatelessWidget {
             Icons.add_circle_outline,
             size: 30,
           ),
+          backgroundColor: Color(0xFFF96241),
         ),
         BottomNavigationBarItem(
           label: '',
@@ -31,7 +35,8 @@ class BottomWidget extends StatelessWidget {
         ),
         BottomNavigationBarItem(
           label: '',
-          icon: Icon(Icons.person_outline),
+          icon: Icon(Icons.person_rounded),
+          backgroundColor: Color(0xFFF96241),
         )
       ],
     );
