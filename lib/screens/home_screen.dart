@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cupertino_icons/cupertino_icons.dart';
 import 'package:pomo_adoro/screens/detail_screen.dart';
+import 'package:pomo_adoro/screens/not_found_screen.dart';
 import 'package:pomo_adoro/utils/color.dart';
 import 'package:pomo_adoro/widgets/bottom_navigation.dart';
 import 'package:pomo_adoro/widgets/card_widget.dart';
@@ -33,9 +34,14 @@ class HomeScreen extends StatelessWidget {
             child: TextField(
               textAlign: TextAlign.center,
               decoration: InputDecoration(
-                suffixIcon: Icon(
-                  Icons.search,
-                  color: primaryColor,
+                suffixIcon: GestureDetector(
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => NotFound()));
+                  },
+                  child: Icon(
+                    Icons.search,
+                    color: primaryColor,
+                  ),
                 ),
                 hintText: 'Bolo de Chocolate',
                 border: InputBorder.none,

@@ -38,33 +38,45 @@ class ContainerWidget extends StatelessWidget {
           Text(
             "Espaguete à Bolonhesa",
             style: TextStyle(
-                color: Colors.white, fontSize: 25, fontWeight: FontWeight.w700),
+              color: Colors.white,
+              fontSize: 25,
+              fontWeight: FontWeight.w700,
+            ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Text(
-                "4.8",
-                style:
-                    TextStyle(color: Colors.white, fontWeight: FontWeight.w700),
-              ),
-              Icon(
-                Icons.star,
-                color: Colors.amber,
-              )
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Text(
-                "Receita enviada por Eluide Sousa",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w500,
+          Padding(
+            padding: const EdgeInsets.only(right: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: const [
+                Text(
+                  "4.8",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w700,
+                    fontSize: 17,
+                  ),
                 ),
-              ),
-            ],
+                Icon(
+                  Icons.star,
+                  color: Colors.amber,
+                )
+              ],
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(right: 10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: const [
+                Text(
+                  "Receita enviada por Eluide Sousa",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
