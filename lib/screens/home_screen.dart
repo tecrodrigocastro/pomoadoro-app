@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cupertino_icons/cupertino_icons.dart';
+import 'package:pomo_adoro/screens/detail_screen.dart';
 import 'package:pomo_adoro/utils/color.dart';
 import 'package:pomo_adoro/widgets/bottom_navigation.dart';
 import 'package:pomo_adoro/widgets/card_widget.dart';
@@ -82,7 +83,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(5.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -92,12 +93,12 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Text(
-                " Tendencias!",
-                style: TextStyle(
-                  fontWeight: FontWeight.w500,
-                  fontSize: 22,
-                ),
+              " Tendencias!",
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+                fontSize: 22,
               ),
+            ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
