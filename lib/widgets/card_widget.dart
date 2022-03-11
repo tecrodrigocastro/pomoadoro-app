@@ -21,7 +21,7 @@ class CardWidget extends StatelessWidget {
                 fit: BoxFit.scaleDown,
                 alignment: Alignment.topCenter,
                 image: NetworkImage(
-                  'http://www.cozinhadoipe.com.br/wp-content/uploads/2016/05/SV1.jpg',
+                  'https://www.imagensempng.com.br/wp-content/uploads/2021/08/04-2.png',
                 ),
               ),
             ),
@@ -41,7 +41,7 @@ class CardWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'Suco verde',
+                        'Espaguete à bolonhesa',
                         style: TextStyle(
                           fontWeight: FontWeight.w700,
                         ),
@@ -75,9 +75,9 @@ class CardWidget extends StatelessWidget {
                     ],
                   ),
                   Text(
-                    "Suco verde antioxidante de alface,  banana, abacate e laranja",
+                    "Espaguete à bolonhesa com queijo e molho caseiro",
                     style: TextStyle(
-                      fontSize: 9,
+                      fontSize: 10,
                       fontWeight: FontWeight.w500,
                     ),
                     textAlign: TextAlign.left,

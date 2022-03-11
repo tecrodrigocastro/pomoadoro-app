@@ -17,8 +17,9 @@ class FavoriteRecipe extends StatelessWidget {
         elevation: 0,
         leading: Center(
           child: GestureDetector(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => HomeScreen()));
             },
             child: Text(
               'PomoAdoro',
