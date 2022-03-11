@@ -60,12 +60,8 @@ class DetailScreen extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.26,
-                    //width: 75,
-                    child: Text(
-                      "250 g de macarrão espaguete \n350 g de coxão mole ou contra filé\n 6 tomates bem maduros\n 1 xícara de molho de tomate refogado\n 1/2 cebola\n 2 dentes de alho\n Azeite\n Manjericão ou manjerona\n Salsa",
-                    ),
+                  Text(
+                    "250 g de macarrão espaguete \n350 g de coxão mole ou contra filé\n 6 tomates bem maduros\n 1 xícara de molho de tomate refogado\n 1/2 cebola\n 2 dentes de alho\n Azeite\n Manjericão ou manjerona\n Salsa",
                   ),
                   Text(
                     "Espaguete e molho:",

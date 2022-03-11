@@ -9,9 +9,7 @@ class ContainerWidget extends StatelessWidget {
       height: MediaQuery.of(context).size.height * 0.4,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
-        image: DecorationImage(
-            image: NetworkImage(
-                'https://st2.depositphotos.com/1006753/11231/i/450/depositphotos_112314680-stock-photo-traditional-spaghetti-bolognese.jpg')),
+        image: DecorationImage(image: AssetImage('images/back_espaguete.jpg')),
       ),
       child: Column(
         children: [
@@ -33,7 +31,7 @@ class ContainerWidget extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: MediaQuery.of(context).size.height * 0.15,
+            height: MediaQuery.of(context).size.height * 0.13,
           ),
           Text(
             "Espaguete à Bolonhesa",
