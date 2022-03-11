@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cupertino_icons/cupertino_icons.dart';
 import 'package:pomo_adoro/screens/detail_screen.dart';
 import 'package:pomo_adoro/screens/not_found_screen.dart';
+import 'package:pomo_adoro/screens/user_perfil_screen.dart';
 import 'package:pomo_adoro/utils/color.dart';
 import 'package:pomo_adoro/widgets/bottom_navigation.dart';
 import 'package:pomo_adoro/widgets/card_widget.dart';
@@ -36,7 +37,8 @@ class HomeScreen extends StatelessWidget {
               decoration: InputDecoration(
                 suffixIcon: GestureDetector(
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => NotFound()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => NotFound()));
                   },
                   child: Icon(
                     Icons.search,
@@ -52,8 +54,18 @@ class HomeScreen extends StatelessWidget {
         actions: [
           Padding(
             padding: EdgeInsets.all(7),
-            child: CircleAvatar(
-              backgroundImage: AssetImage('images/p1.jpg'),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => UserPerfil(),
+                  ),
+                );
+              },
+              child: CircleAvatar(
+                backgroundImage: AssetImage('images/p1.jpg'),
+              ),
             ),
           ),
         ],

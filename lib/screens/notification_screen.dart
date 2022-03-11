@@ -30,7 +30,6 @@ class NotificationsScreen extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: BottomWidget(),
       body: Padding(
         padding: EdgeInsets.all(10),
         child: Column(
